@@ -1,137 +1,43 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<title>About Us</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="Travello template project">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
-	<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
-</head>
-
-<body>
-
-	<div class="super_container">
-		<header class="header" style="background-color: #003F74; height: 110px;">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="header_content d-flex flex-row align-items-center justify-content-start">
-							<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
-								<div class="logo"><a href="">Travello</a></div>
-								<nav class="main_nav">
-									<ul class="d-flex flex-row align-items-start justify-content-start">
-										<li><a href="">Home</a></li>
-										<li><a href="services">Services</a></li>
-										<li class="active"><a href="about">About us</a></li>
-										<li><a href="contact">Contact</a></li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		<div class="about" style="margin-top: 100px;">
-			<div class="container">
-				<div class="row">
-					<div class="col text-center">
-						<div class="section_title">
-							<h2>About us</h2>
-						</div>
-					</div>
-				</div>
-				<div class="row about_row">
-					<div class="col-lg-6">
-						<div class="about_content">
-							<div class="text_highlight">Pellentesque sit amet elementum ccumsan sit amet mattis eget,
-								tristique
-								at leo. Vivamus massa.Tempor massa et laoreet .Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit.</div>
-							<div class="about_text">
-								<p>Pellentesque sit amet elementum ccumsan sit amet mattis eget, tristique at leo.
-									Vivamus
-									massa.Tempor massa et laoreet .Lorem ipsum dolor sit amet, consectetur adipiscing
-									elit. Sed
-									eu laoreet ante, sollicitudin volutpat quam. Vestibulum posuere malesuada ultrices.
-									In
-									pulvinar rhoncus lacus at aliquet. Nunc vitae lacus varius, auctor nisi sit amet,
-									consectetur mauris. Curabitur sodales semper est, vel faucibus urna laoreet vel. Ut
-									justo
-									diam, sodales non pulvinar at, vulputate quis neque. Etiam aliquam purus vel
-									ultricies
-									consequat.</p>
-							</div>
-							<div class="button about_button"><a href="#">read more</a></div>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="about_image"><img src="{% static 'images/about_1.jpg' %}" alt="" style="height: 500px;"></div>
-					</div>
+{% block content %}
+<div class="about" style="margin-top: 100px;">
+	<div class="container">
+		<div class="row">
+			<div class="col text-center">
+				<div class="section_title">
+					<h2>About us</h2>
 				</div>
 			</div>
 		</div>
-
-		<!-- Milestones -->
-
-		<div class="milestones">
-			<div class="container">
-				<div class="row">
-
-					<!-- Milestone -->
-					<div class="col-lg-3 milestone_col">
-						<div class="milestone text-center">
-							<div class="milestone_icon"><img src="{% static 'images/mountain.svg' %}" alt=""></div>
-						</div>
+		<div class="row about_row">
+			<div class="col-lg-6">
+				<div class="about_content">
+					<div class="about_text">
+						<p>There are full-service Travel Leaders travel agencies to
+							help you travel better on your next leisure vacation or business trip.
+							Travel Leaders travel agents will take the time to understand your unique travel interests
+							and aspirations, until we "get you." We then use our education, first-hand travel experience
+							and relationships with airlines, car, hotel, resort, tour and cruise supplier partners to
+							make sure you enjoy an exceptional personalized travel experience that will create memories
+							to last a lifetime.
+							We are your personal travel advocate to help you with everything from getting you on the
+							next flight, if your flight is canceled, to searching through all of the options to find you
+							the right vacation package, cruise, shore excursions, restaurants and more. We will provide
+							you with tips, advice and insights that only a trained and experienced travel professional
+							can offer. We live and love travel and welcome the opportunity to show you how we can help
+							you travel better.
+							Travel Leaders travel agents are experts who understand where you want to go, how to get you
+							there and the priceless experiences you want to have. We get you and we get you there.</p>
 					</div>
-
-					<!-- Milestone -->
-					<div class="col-lg-3 milestone_col">
-						<div class="milestone text-center">
-							<div class="milestone_icon"><img src="{% static 'images/island.svg' %}" alt=""></div>
-						</div>
-					</div>
-
-					<!-- Milestone -->
-					<div class="col-lg-3 milestone_col">
-						<div class="milestone text-center">
-							<div class="milestone_icon"><img src="{% static 'images/camera.svg' %}" alt=""></div>
-						</div>
-					</div>
-
-					<!-- Milestone -->
-					<div class="col-lg-3 milestone_col">
-						<div class="milestone text-center">
-							<div class="milestone_icon"><img src="{% static 'images/boat.svg' %}" alt=""></div>
-						</div>
-					</div>
-
+					<div class="button about_button"><a href="#">read more</a></div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="about_image"><img src="{% static 'images/about1.jpg' %}" alt="" style="height: 500px; width: 700px;">
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="styles/bootstrap4/popper.js"></script>
-	<script src="styles/bootstrap4/bootstrap.min.js"></script>
-	<script src="plugins/greensock/TweenMax.min.js"></script>
-	<script src="plugins/greensock/TimelineMax.min.js"></script>
-	<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
-	<script src="plugins/greensock/animation.gsap.min.js"></script>
-	<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
-	<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-	<script src="plugins/easing/easing.js"></script>
-	<script src="plugins/parallax-js-master/parallax.min.js"></script>
-	<script src="js/about.js"></script>
-</body>
-
-</html>
+</div>
+{% endblock content %}
