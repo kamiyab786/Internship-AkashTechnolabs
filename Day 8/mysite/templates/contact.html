@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contact Us</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Travello template project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+	<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
+</head>
+
+<body>
+	<div class="super_container">
+		<header class="header" style="background-color: #003F74; height: 110px;">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_content d-flex flex-row align-items-center justify-content-start">
+							<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+								<div class="logo"><a href="">Travello</a></div>
+								<nav class="main_nav">
+									<ul class="d-flex flex-row align-items-start justify-content-start">
+										<li><a href="">Home</a></li>
+										<li><a href="services">Services</a></li>
+										<li><a href="about">About us</a></li>
+										<li class="active"><a href="contact">Contact</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="contact" style="margin-top: 100px; ">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<div class="section_title">
+							<h2>Contact us</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6" style="color: #003F74;">
+					<div class="contact_content">
+						<div class="contact_title"><b>Get in touch with us</b></div>
+						<div class="contact_list">
+							<b>
+								<ul>
+									<li>
+										<div>Address:</div>
+										<div>Ahmedabad, Gujarat, India</div>
+									</li>
+									<li>
+										<div>Phone:</div>
+										<div>+91 7096366898</div>
+									</li>
+									<li>
+										<div>Email:</div>
+										<div>yourmail@gmail.com</div>
+									</li>
+								</ul>
+							</b>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="col-lg-6">
+					<div class="contact_form_container">
+						<form action="#" id="contact_form" class="contact_form">
+							<div style="margin-bottom: 18px"><input style="border:3px solid #003F74;" type="text"
+									class="contact_input contact_input_name inpt" placeholder="Your Name"
+									required="required">
+								<div class="input_border"></div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6" style="margin-bottom: 18px">
+									<div><input style="border:3px solid #003F74;" type="text"
+											class="contact_input contact_input_email inpt" placeholder="Your E-mail"
+											required="required">
+										<div class="input_border"></div>
+									</div>
+								</div>
+							</div>
+							<div><textarea style="border:3px solid #003F74;" class="contact_textarea contact_input inpt"
+									placeholder="Message" required="required"></textarea>
+								<div class="input_border" style="bottom:3px"></div>
+							</div>
+							<button class="contact_button"
+								style="background-color: #003F74; padding: 5px; color: white;">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="styles/bootstrap4/popper.js"></script>
+	<script src="styles/bootstrap4/bootstrap.min.js"></script>
+	<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+	<script src="plugins/easing/easing.js"></script>
+	<script src="plugins/parallax-js-master/parallax.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+	<script src="js/contact.js"></script>
+</body>
+
+</html>
