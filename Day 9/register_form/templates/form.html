@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style>
+        body {
+            background-color: #162832;
+            background-size: cover;
+            padding-top: 125px;
+        }
+
+        form {
+            max-width: 530px;
+            padding: 15px;
+            margin: 0 auto;
+            border-radius: 0.3em;
+            background-color: #f2f2f2;
+        }
+
+        form h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 40px;
+            font-weight: 600;
+            color: #000000;
+            margin-top: 5%;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        .messages {
+            text-align: center;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form-horizontal" action="" method="post">
+            {% csrf_token %}
+            <h2>Registration</h2>
+            <div class="form-group">
+                <label for="first_name" class="col-sm-3 control-label">First Name</label>
+                <div class="col-sm-9">
+                    <input type="text" name="first_name" placeholder="First Name" class="form-control" autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="last_name" class="col-sm-3 control-label">Last Name</label>
+                <div class="col-sm-9">
+                    <input type="text" name="last_name" placeholder="Last Name" class="form-control" autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-sm-3 control-label">Email</label>
+                <div class="col-sm-9">
+                    <input type="email" name="email" placeholder="Email" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="gender" class="col-sm-3 control-label">Gender</label>
+                <div class="col-sm-9">
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="contact" class="col-sm-3 control-label">Contact</label>
+                <div class="col-sm-9">
+                    <input type="number" name="contact" placeholder="Contact No." class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="country" class="col-sm-3 control-label">Country</label>
+                <div class="col-sm-9">
+                <select id="inputState" name="country" class="form-control" style="width: 100px;">
+                    <option value="0"></option>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>Russia</option>
+                    <option>United Kingdom</option>
+                    <option>Canada</option>
+                </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address" class="col-sm-3 control-label">Address</label>
+                <div class="col-sm-9">
+                    <input type="text" name="address" placeholder="Address" class="form-control">
+                </div>
+            </div>
+            <input type="Submit" class="btn btn-primary btn-block">
+        </form>
+    </div>
+</body>
+
+</html>
